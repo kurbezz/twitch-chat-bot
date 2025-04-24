@@ -10,7 +10,8 @@ from handlers import HANDLERS
 class ChatBot:
     TARGET_CHANNELS = [
         "kurbezz",
-        "kamsyll"
+        "kamsyll",
+        "hafmc"
     ]
 
     def __init__(self, client: Twitch):

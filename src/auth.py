@@ -1,4 +1,3 @@
-import os
 import json
 import aiofiles
 
@@ -6,9 +5,11 @@ from twitchAPI.twitch import Twitch
 from twitchAPI.oauth import UserAuthenticator
 from twitchAPI.type import AuthScope
 
+from config import settings
 
-APP_ID = os.environ["TWITCH_APP_ID"]
-APP_SECRET = os.environ["TWITCH_APP_SECRET"]
+
+APP_ID = settings.TWITCH_APP_ID
+APP_SECRET = settings.TWITCH_APP_SECRET
 USER_SCOPE = [AuthScope.CHAT_READ, AuthScope.CHAT_EDIT]
 
 
